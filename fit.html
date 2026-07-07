@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PULSE FITNESS | Premium Gym & Fitness Club</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fit.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-dumbbell"></i> PULSE<span>FIT</span></a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#features">Features</a>
+            <a href="#plans">Pricing</a>
+            <a href="#review">Reviews</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <span>No Pain, No Gain</span>
+            <h3>Crush Your <span>Limits</span> Today</h3>
+            <p>Get access to top-tier equipment, expert structural personal trainers, and an energetic gym atmosphere designed to maximize your transformation.</p>
+            <a href="#plans" class="btn">Join The Club</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <h1 class="heading">Why Choose <span>Us?</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-cube"></i>
+                <h3>Modern Equipment</h3>
+                <p>Equipped with elite cardio machines, heavy-duty Olympic free weights, and dedicated strength training zones.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-user-coach"></i>
+                <h3>Expert Trainers</h3>
+                <p>Work 1-on-1 with certified personal trainers to map out strict nutrition programs and form-perfect execution.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Flexible Hours</h3>
+                <p>Open 24/7. Fits smoothly into early morning grinds or late-night sweat sessions without schedule conflicts.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="plans" id="plans">
+        <h1 class="heading">Membership <span>Plans</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <h3>Basic Pass</h3>
+                <div class="price">$29<span>/mo</span></div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Standard Gym Floor Access</li>
+                    <li><i class="fas fa-check"></i> Locker Room & Showers</li>
+                    <li><i class="fas fa-times"></i> Free Personal Trainer Sessions</li>
+                    <li><i class="fas fa-times"></i> Group Fitness Classes</li>
+                </ul>
+                <button class="btn plan-btn" data-plan="Basic Pass">Select Plan</button>
+            </div>
+            <div class="box active">
+                <div class="ribbon">Popular</div>
+                <h3>Elite Pass</h3>
+                <div class="price">$59<span>/mo</span></div>
+                <ul>
+                    <li><i class="fas fa-check"></i> 24/7 Unlimited Gym Access</li>
+                    <li><i class="fas fa-check"></i> 2x Free Trainer Sessions/mo</li>
+                    <li><i class="fas fa-check"></i> Access to Group Classes</li>
+                    <li><i class="fas fa-check"></i> Nutritional Guide PDF</li>
+                </ul>
+                <button class="btn plan-btn" data-plan="Elite Pass">Select Plan</button>
+            </div>
+            <div class="box">
+                <h3>VIP Pass</h3>
+                <div class="price">$99<span>/mo</span></div>
+                <ul>
+                    <li><i class="fas fa-check"></i> All-Access Anywhere Pass</li>
+                    <li><i class="fas fa-check"></i> Dedicated Personal Coach</li>
+                    <li><i class="fas fa-check"></i> Unlimited Smoothie Bar Access</li>
+                    <li><i class="fas fa-check"></i> Complimentary Massage Therapy</li>
+                </ul>
+                <button class="btn plan-btn" data-plan="VIP Pass">Select Plan</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="review" id="review">
+        <h1 class="heading">Success <span>Stories</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <p>"The community structure here keeps me accountable. Dropped 15 lbs in 2 months with their high-intensity intervals class!"</p>
+                <div class="user">
+                    <div class="info">
+                        <h3>Marcus Vance</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <p>"Clean facility, zero broken machines, and helpful staff members. Easily the best premium health venue in town."</p>
+                <div class="user">
+                    <div class="info">
+                        <h3>Sarah Jenkins</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="heading">Get In <span>Touch</span></h1>
+        <form id="gym-contact-form">
+            <div class="inputBox">
+                <input type="text" id="form-name" placeholder="Your Name" required>
+                <input type="email" id="form-email" placeholder="Your Email" required>
+            </div>
+            <div class="inputBox">
+                <input type="tel" id="form-phone" placeholder="Phone Number">
+                <input type="text" id="form-subject" placeholder="Interested In (e.g. Free Trial)">
+            </div>
+            <textarea id="form-message" cols="30" rows="10" placeholder="Your Message Here..." required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <section class="footer">
+        <div class="credit">&copy; 2026 <span>PULSEFIT</span> | Built for Peak Performance</div>
+    </section>
+
+    <script src="fit.js"></script>
+
+</body>
+</html>
